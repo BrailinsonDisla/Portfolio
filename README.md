@@ -1,7 +1,7 @@
 # Brailinson Disla's Portfolio
 
 ---
-<div style="display: flex; flex-direction: row; justify-content: space-around">
+<div style="display: flex; flex-direction: row; justify-content: center">
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
 
 <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E">
