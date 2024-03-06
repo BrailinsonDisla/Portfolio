@@ -1,0 +1,73 @@
+.Navbar {
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    width: 4rem;
+    justify-content: center;
+    overflow: hidden;
+    color: hsl(250, 100%, 10%);
+    background-color: var(--primary-color);
+    transition: width .75s linear;
+}
+
+.Navbar:hover {
+    width: 10rem;
+}
+
+.NavbarContainer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    flex-direction: column;
+    /* background-color: hsl(150, 75%, 50%); */
+}
+
+.NavbarItem {
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    /* background-color: yellow; */
+}
+
+.NavbarItem:hover {
+    background-color: hsl(150, 50%, 45%);
+}
+
+
+.NavbarIcon {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    width: 3rem;
+    transition: transform 1s ease-in-out;
+    /* background-color: red; */
+}
+
+.NavbarItem:hover .NavbarIcon {
+    transform: rotate(360deg);
+}
+
+
+.NavbarItem:last-child {
+    margin-top: auto;
+    /* margin-bottom: 0; */
+}
+
+.NavbarText {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.15rem;
+    transform: scale(0);
+    transition: transform 0.75s linear;
+    /* background-color: blue; */
+}
+
+.Navbar:hover .NavbarText {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+    /* display: block; */
+}
+
