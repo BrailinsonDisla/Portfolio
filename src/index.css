@@ -5,6 +5,9 @@
     font-family: 'Anta';
     --primary-color: hsl(150, 50%, 50%);
     --secondary-color: hsl(5, 75%, 50%);
+    --navbar-width: 4rem;
+    --navbar-full-width: 10rem;
+    --navbar-transition-time: 0.75s;
 }
 
 * {
@@ -29,4 +32,9 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--secondary-color);
+}
+
+.Navbar:hover + .Main {
+    margin-left: var(--navbar-full-width);
+    /* width: calc(100vw - var(--navbar-full-width)); */
 }

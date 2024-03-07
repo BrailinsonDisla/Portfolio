@@ -4,6 +4,7 @@ import AboutMeIcon from "../assets/icons/AboutMe.svg";
 import ResumeIcon from "../assets/icons/Resume.png";
 import ProjectsIcon from "../assets/icons/Projects.png";
 import GalleryIcon from "../assets/icons/Gallery.png";
+import ContactIcon from "../assets/icons/Contact.png";
 
 const Navbar = () => {
   return (
@@ -35,7 +36,7 @@ const Navbar = () => {
         </button>
 
         <button className="NavbarItem">
-          <img src={GalleryIcon} className="NavbarIcon"></img>
+          <img src={ContactIcon} className="NavbarIcon"></img>
           <p className="NavbarText">Contact</p>
         </button>
       </ul>
