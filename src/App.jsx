@@ -1,6 +1,8 @@
-import './App.css'
-import Main from './components/Main'
 import Navbar from './components/Navbar'
+import Main from './components/Main'
+
+import './App.css'
+
 const App = () => {
   return (
     <>
@@ -10,4 +12,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

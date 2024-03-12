@@ -1,4 +1,5 @@
 import "./Navbar.css";
+
 import HomeIcon from "../assets/icons/Home.svg";
 import AboutMeIcon from "../assets/icons/AboutMe.svg";
 import ResumeIcon from "../assets/icons/Resume.png";
@@ -9,7 +10,7 @@ import ContactIcon from "../assets/icons/Contact.png";
 const Navbar = () => {
   return (
     <nav className="Navbar">
-      <ul className="NavbarContainer">
+      <ul className="NavbarItems">
         <button className="NavbarItem">
           <img src={HomeIcon} className="NavbarIcon" />
           <p className="NavbarText">Home</p>

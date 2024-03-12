@@ -1,27 +1,27 @@
 .Navbar {
   position: fixed;
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: var(--navbar-width);
   justify-content: center;
   overflow: hidden;
-  color: hwb(251, 0%, 80%);
   background-color: var(--primary-color);
   transition: width var(--navbar-transition-time) linear;
   border-right: solid 0.25em var(--secondary-color);
+  /* background-color: hsl(5, 75%, 50%); */
 }
 
 .Navbar:hover {
   width: var(--navbar-full-width);
 }
 
-.NavbarContainer {
+.NavbarItems {
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 1rem 0 1rem 0;
   flex-direction: column;
-  /* background-color: hsl(150, 75%, 50%); */
+  /* background-color: hsl(50, 75%, 50%); */
 }
 
 .NavbarItem {
@@ -39,7 +39,7 @@
 .NavbarIcon {
   margin: 1rem 0.5rem 1rem 0.5rem;
   width: 3rem;
-  transition: transform var(--main-transition-time) linear;
+  transition: transform var(--navbar-transition-time) linear;
   /* background-color: red; */
 }
 
@@ -54,9 +54,11 @@
 
 .NavbarText {
   display: flex;
+  margin-left: 0.5em;
   height: 100%;
   align-items: center;
   font-weight: bolder;
+  font-family: 'Anta';
   font-size: 1.15rem;
   transform: scale(0);
   transition: transform var(--navbar-transition-time) linear;
@@ -64,6 +66,13 @@
 }
 
 .Navbar:hover .NavbarText {
+  opacity: 0.5;
+  transform: scale(0.75);
+  visibility: visible;
+  /* display: block; */
+}
+
+.NavbarItem:hover .NavbarText {
   opacity: 1;
   transform: scale(1);
   visibility: visible;

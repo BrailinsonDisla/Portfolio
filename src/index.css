@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover');
 
 :root {
     font-size: 12px;
-    font-family: 'Anta';
+    font-family: 'Irish Grover';
     --primary-color: hsl(150, 50%, 50%);
     --secondary-color: hsl(5, 75%, 50%);
     --navbar-width: 4rem;
     --navbar-full-width: 10rem;
-    --navbar-transition-time: 0.75s;
+    --navbar-transition-time: 0.5s;
 }
 
 * {
@@ -22,7 +23,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.40rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -36,5 +37,4 @@ body::-webkit-scrollbar-thumb {
 
 .Navbar:hover + .Main {
     margin-left: var(--navbar-full-width);
-    /* width: calc(100vw - var(--navbar-full-width)); */
-}
+} 
